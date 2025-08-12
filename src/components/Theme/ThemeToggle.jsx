@@ -7,9 +7,6 @@ const ThemeToggle = () => {
     <button
       onClick={toggleTheme}
       style={{
-        // borderRadius: "50%", // Makes it round
-        // width: "40px", // Circle width
-        // height: "40px", // Circle height
         border: "solid white", // No border
         cursor: "pointer", // Pointer on hover
         display: "flex", // Center text/icon

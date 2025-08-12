@@ -5,20 +5,24 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <nav className="bg-white border-gray-200 dark:bg-gray-900">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <div>
-          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-            CodingTech
-          </span>
-          {/* Middle Buttons */}
-          <div className="flex space-x-4">
-            <button className="px-4 py-2 bg-blue-500 hover:bg-blue-600 rounded-md">
+      <div className="max-w-screen-xl mx-auto px-4 flex items-center justify-between relative h-16">
+        {/* Left: Branding */}
+        <span className="text-2xl font-semibold whitespace-nowrap dark:text-white">
+          CodingTech
+        </span>
+        {/* Center: Buttons */}
+        <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 flex space-x-4">
+          <Link to="/Coding">
+            <button className="px-4 py-2 bg-blue-500 hover:bg-blue-600 rounded-md text-white">
               Coding
             </button>
-            <button className="px-4 py-2 bg-green-500 hover:bg-green-600 rounded-md">
+          </Link>
+
+          <Link to="./Tech">
+            <button className="px-4 py-2 bg-green-500 hover:bg-green-600 rounded-md text-white">
               Tech
             </button>
-          </div>
+          </Link>
         </div>
         <div>
           <div className="relative mt-3 md:hidden"></div>
